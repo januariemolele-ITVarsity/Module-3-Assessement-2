@@ -1,0 +1,229 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.body-home{
+    background-image: url('images/background-1.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-menu{
+    background-image: url('images/background-2.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-submit{
+    background-image: url('images/background-3.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*======== CUSTOM CHECKPOINTS ========*/
+
+input[type-checkbox] {
+    display: none;
+}
+
+input[type-checkbox] + label:before {
+    font-family: fontAwesome;
+    display: inline-block;
+    
+    content: "\f0c8";
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+
+/*========== HEADER ==========*/
+
+.header{
+    background-color: black;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+}
+
+.header i{
+    float: left;
+    padding: 17px 0px 0px 17px;
+    color: whitesmoke;
+}
+.header img{
+    height:inherit;
+    width: 150px;
+    padding-top: 0px;
+    padding-right: 25px;
+}
+
+/*========== HOME PAGE ==========*/
+
+#home-logo-img{
+    width: 200px;
+    display: block;
+    margin: auto;
+    padding: 50px;
+}
+/*========== HOME PAGE MENU ==========*/
+
+.home-menu-item{
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid whitesmoke;
+    
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+/*========== MENU PAGE ==========*/
+
+#menu {
+    padding-top: 70px;
+}
+
+/*========== MENU PAGE DETAILS ==========*/
+
+.menu-list a {
+    text-decoration: none;
+}
+
+.menu-list-item {
+    border: 5px solid whitesmoke;
+    margin: 40px;
+    width: 100%;
+}
+
+.menu-list-item h1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: whitesmoke;
+    padding-left: 10px;
+}
+
+.menu-list-item i {
+    float: right;
+    color: whitesmoke;
+    padding-right: 10px;
+}
+
+
+/*========== RECIPE PAGE ==========*/
+
+#recipe {
+    padding-top: 100px;
+}
+
+/*========== RECIPE DETAILS ==========*/
+
+.recipe-details img {
+    width: 100%;
+}
+
+.recipe-details h1 {
+    font-size: 25px;
+    text-align: center;
+    border: 5px solid #1a1a1a;
+    margin: 10px;
+    padding: 5px;
+}
+
+.recipe-details-info {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.recipe-details-info p {
+    font-size: 13px;
+    display: inline-block;
+}
+
+.recipe-details-ingredients label {
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.recipe-details-steps {
+    padding-top: 20px;
+}
+
+
+/*========== ORDER RESPONSE ==========*/
+
+#response{
+    padding: 95px;
+    text-align: center;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+
+
+/*========== RESPONSIVE LAYOUT ==========*/
+
+@media only screen and (min-width: 600px) {
+    #menu {
+        width: 80%;
+    }
+    
+    #recipe {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+     #menu {
+        width: 60%;
+    }
+    
+    #recipe {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+     #menu {
+        width: 40%;
+    }
+    
+    #recipe {
+        width: 40%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .body-home {
+        background-image:url('images/background-1.jpg');
+    }
+    
+    .body-menu {
+        background-image: url('images/background-2.jpg');
+    }
+}
